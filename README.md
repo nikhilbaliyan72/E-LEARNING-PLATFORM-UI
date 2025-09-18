@@ -23,6 +23,11 @@ Gamification takes motivation to another level. Features like badges, certificat
 
 
 
+##OUTPUT
+
+<img width="1857" height="833" alt="Image" src="https://github.com/user-attachments/assets/8ac72606-0791-4a05-ac01-8b5d2f2ab4a5" />
+
+
 
 
 For organizations and institutions, an E-Learning platform provides a scalable solution. Schools can teach hundreds of students at once, companies can train employees globally, and universities can offer courses to international learners. With secure logins, cloud storage, and mobile access, the platform ensures learning is smooth and reliable.
