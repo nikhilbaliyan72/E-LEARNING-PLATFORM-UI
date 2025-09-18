@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Completion Certificate</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      background: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .certificate-container {
+      width: 90%;
+      max-width: 900px;
+    }
+
+    .certificate-border {
+      border: 10px solid #2c3e50;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .certificate-inner {
+      border: 5px double #1abc9c;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 42px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .student-name {
+      font-size: 32px;
+      color: #1abc9c;
+      margin: 20px 0;
+      text-transform: uppercase;
+    }
+
+    .content {
+      font-size: 18px;
+      color: #333;
+      margin: 20px 0;
+    }
+
+    .date {
+      margin: 30px 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .signatures {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .signatures div {
+      width: 40%;
+      text-align: center;
+    }
+
+    .signatures hr {
+      border: none;
+      border-top: 2px solid #333;
+      margin-bottom: 5px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .download-btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #1abc9c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #16a085;
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate-container">
+    <div class="certificate-border">
+      <div class="certificate-inner">
+        <h1 class="title">Certificate of Completion</h1>
+        <p class="subtitle">This is proudly presented to</p>
+        
+        <h2 class="student-name">[Student Name]</h2>
+        
+        <p class="content">
+          For successfully completing the <strong>[Course Name]</strong>  
+          on <strong>CODTECH E-Learning Platform</strong>.  
+          The student has demonstrated dedication and excellence in learning.
+        </p>
+        
+        <p class="date">
+          Completion Date: <strong>[DD/MM/YYYY]</strong>
+        </p>
+
+        <div class="signatures">
+          <div>
+            <hr>
+            <p>Instructor</p>
+          </div>
+          <div>
+            <hr>
+            <p>Head of CODTECH</p>
+          </div>
+        </div>
+        
+        <div class="footer">
+          <p>© CODTECH E-Learning Platform</p>
+        </div>
+
+        <button class="download-btn" onclick="window.print()">Download as PDF</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodTech — Courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">CodTech</div>
+    <nav>
+      <a href="index.html" class="active">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="certificate.html">Certificate</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Learn. Build. Launch.</h1>
+      <p>Interactive courses with video lessons, progress tracking and certificates issued after internship end date.</p>
+    </section>
+
+    <section class="courses-grid" id="coursesGrid">
+      <!-- JS injects course cards -->
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="year"></span> CodTech • E-Learning Platform</footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    initCourseListing();
+  </script>
+</body>
+</html>

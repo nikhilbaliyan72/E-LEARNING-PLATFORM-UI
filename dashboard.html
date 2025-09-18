@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodTech — Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">CodTech</div>
+    <nav>
+      <a href="index.html">Courses</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="certificate.html">Certificate</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="dashboard">
+      <h1>Your Dashboard</h1>
+
+      <div class="dashboard-grid">
+        <div class="card">
+          <h3>Enrolled Courses</h3>
+          <ul id="enrolledList" class="enrolled-list"></ul>
+        </div>
+
+        <div class="card">
+          <h3>Overall Progress</h3>
+          <div class="progress-box">
+            <div class="progress-bar large">
+              <div id="overallFill" class="progress-fill" style="width:0%"></div>
+            </div>
+            <div id="overallText" class="muted">0%</div>
+          </div>
+
+          <h3 style="margin-top:16px">Internship End Date (for certificate)</h3>
+          <input id="internshipDate" type="date" />
+          <div style="margin-top:10px">
+            <button id="saveDate" class="btn primary">Save Date</button>
+            <button id="clearData" class="btn danger">Clear Progress</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px">
+        <a href="certificate.html" class="btn">View Certificate</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+  <script> loadDashboard(); </script>
+</body>
+</html>

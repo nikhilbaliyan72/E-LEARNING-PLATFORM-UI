@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodTech — Course</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">CodTech</div>
+    <nav>
+      <a href="index.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="certificate.html">Certificate</a>
+    </nav>
+  </header>
+
+  <main class="container course-page">
+    <div class="course-main">
+      <h2 id="courseTitle">Course Title</h2>
+      <p id="courseDesc" class="muted">Course description</p>
+
+      <div class="video-wrap">
+        <div id="videoEmbed" class="video-embed"></div>
+      </div>
+
+      <div class="lessons">
+        <h3>Lessons</h3>
+        <ul id="lessonList" class="lesson-list"></ul>
+      </div>
+
+      <div class="course-controls">
+        <div class="progress-box">
+          <label>Progress:</label>
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill" style="width:0%"></div>
+          </div>
+          <div id="progressText" class="muted">0%</div>
+        </div>
+
+        <div style="margin-top:12px; display:flex; gap:10px; align-items:center;">
+          <button id="enrollBtn" class="btn primary">Enroll</button>
+          <a id="viewDashboard" class="btn ghost" href="dashboard.html">Go to Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const courseId = params.get('id') || 'course1';
+    loadCoursePage(courseId);
+  </script>
+</body>
+</html>
